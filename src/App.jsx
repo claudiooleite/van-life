@@ -17,12 +17,8 @@ import NotFound from './pages/NotFound'
 import Login from './pages/Login'
 import AuthRequiredLayout from './components/AuthRequiredLayout'
 import './App.css'
-import { makeServer } from './server'
 
-
-
-// Initialize the server
-makeServer()
+import "./server"
 
 
 function App() {

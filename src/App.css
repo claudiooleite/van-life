@@ -71,6 +71,41 @@ nav {
   display: flex;
 }
 
+/* Hide nav links and show menu icon on small screens */
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #4d4d4d;
+  }
+}
+
+/* Hide menu icon on larger screens */
+@media (min-width: 769px) {
+  .menu-icon {
+    display: none;
+  }
+}
+
 main {
   margin-bottom: 84px;
 }

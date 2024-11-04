@@ -8,6 +8,11 @@ function Header() {
         color: "#161616"
     }
 
+    //  fake logout for test 
+    function fakeLogOut() {
+        localStorage.removeItem("loggedin")
+    }
+
     return (
 
         <header>
@@ -37,6 +42,7 @@ function Header() {
                         className="login-icon"
                     />
                 </Link>
+                <button onClick={fakeLogOut}>Log out (testing) </button>
             </nav>
         </header>
     )

@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import { useParams } from "react-router-dom"
 import { Link, NavLink, Outlet } from "react-router-dom"
+import { getHostVans } from "../../api"
 
 
 export default function HostVanDetail() {

@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react"
 import { Link } from "react-router-dom"
+import { getHostVans } from "../../api"
 
 export default function HostVans() {
     const [vans, setVans] = useState([])
@@ -23,7 +24,7 @@ export default function HostVans() {
 
     const hostVansEls = vans.map(van => (
         <Link
-            to={van.id}
+            to={`${van.id}`}
             key={van.id}
             className="host-van-link-wrapper"
         >
@@ -44,7 +45,6 @@ export default function HostVans() {
     if (error) {
         return <h1>There was an error: {error.message}</h1>
     }
-
 
     return (
         <section>

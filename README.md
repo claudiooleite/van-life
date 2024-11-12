@@ -28,7 +28,7 @@ Welcome to the Vans Rental Platform! This application is designed to connect van
 ## 🔗 Links
 
 - **GitHub Repository:** [https://github.com/claudiooleite/van-life](#)
-- - **GitHub Repository:** [https://van-life-project-claudio.netlify.app/](#)
+- **GitHub Repository:** [https://van-life-project-claudio.netlify.app/](#)
 
 ## 🖼️ Screenshots
 
